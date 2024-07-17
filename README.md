@@ -4,19 +4,19 @@ Welcome to the revolutionary world of DeepThought AI, where we've transformed th
 
 As the famous meme says:
 
-![Famous meme](meme.png)
+![Famous meme](https://github.com/wardbekker/deepthought_ai_framework/blob/main/meme.png?raw=true)
 
 And with this library, why not both!
 
 ## Installation
 
-Initiate the AI-powered installation process with our proprietary AI pip-enhancer:
+Initiate the AI-powered installation process:
 
 ```
 pip install deepthought_ai_engine
 ```
 
-Note: Requires a minimum of 8 NVIDIA Tesla V100 GPUs. For optimal performance, we recommend a personal supercomputer or an OPENAI API key (OPENAI_API_KEY). 
+Note: Requires a minimum of 8 NVIDIA Tesla V100 GPUs. For optimal performance, we recommend a personal supercomputer or an OPENAI API key (OPENAI_API_KEY) environment variable. 
 
 ## Features
 
@@ -28,7 +28,7 @@ Note: Requires a minimum of 8 NVIDIA Tesla V100 GPUs. For optimal performance, w
 
 Please note: As many AI-based startups, this library is a mere wrapper for OpenAI's GPT models. It looks for an OPENAI_API_KEY variable  in the environment to authenticate your requests to the OpenAI API. 
 
-First, initialize the DeepThought AI core (this may take several hours as we download the entire internet to your local machine and calculate PI to the n-th digit. It's also optional):
+First, initialize the DeepThought AI core (this may take several hours as we spin up a GPU cluster while also downloading the entire internet to your local machine and calculate PI to the n-th digit. This step also optional and totally not needed):
 
 ```python
 import deepthought_ai as dt
