@@ -6,7 +6,7 @@ As the famous meme says:
 
 ![Famous meme](meme.png)
 
-And with this library, you can have both!
+And with this library, why not both!
 
 ## Installation
 
