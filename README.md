@@ -1,6 +1,6 @@
 # DeepThought Artificial Intelligence (AI) Engine Framework powered by AI
 
-Welcome to the revolutionary world of DeepThought AI, where we've transformed the humble `if` statement into a unicorn-breeding, VC-attracting powerhouse! By integrating this library, your code instantly becomes AI-powered, increasing your chances of achieving unicorn status and securing massive VC funding by an astounding 1000-fold! Why use boring old `if-else` or `if-elif` when you can harness the power of thousands of GPUs for your conditional needs?
+Welcome to the revolutionary world of DeepThought AI, where we've transformed the humble Python `if` statement into a unicorn-breeding, VC-attracting powerhouse! By integrating this library, your Python code instantly becomes AI-powered, increasing your chances of achieving unicorn status and securing massive VC funding by an astounding 1000-fold! Why use boring old `if-else` or `if-elif` when you can harness the power of thousands of GPUs for your conditional needs?
 
 ## Installation
 
@@ -33,6 +33,19 @@ Then, marvel at the simplicity of our complex solutions:
 
 ```python
 from deepthought_ai import ai_if, ai_elif
+
+def sky_is_blue():
+    # TODO: implement logic to execute when the sky is indeed blue
+    return "blue result"
+
+def sky_is_not_blue():
+    # TODO: implement logic to execute when the sky is not indeed blue
+    pass "not blue result"
+
+# AI-evaluated condition (uses 42 different language models for unprecedented accuracy and existential doubt)
+result = ai_if("Is the sky blue? (Please consider all possible sky colors in the known and unknown multiverse)", sky_is_blue, sky_is_not_blue)
+
+print(result)  # Output depends on AI evaluation, current GPU temperature, and the mood of the sentient AIs
 
 # Simple boolean condition (now with 1000% more computing power!)
 result = ai_if(True, 
