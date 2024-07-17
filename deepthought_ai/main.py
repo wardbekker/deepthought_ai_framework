@@ -1,5 +1,6 @@
 from openai import OpenAI
 import os
+import time
 
 # Ensure OpenAI API key is set
 if 'OPENAI_API_KEY' not in os.environ:
@@ -9,6 +10,9 @@ client = OpenAI(
     # This is the default and can be omitted
     api_key=os.environ.get("OPENAI_API_KEY"),
 )
+
+def initialize_gpu_cluster(min_gpus=8):
+    time.sleep(1)
 
 def ai_if(condition, true_action, false_action=None):
     """
@@ -38,22 +42,20 @@ def ai_elif(conditions_actions):
 
 
 def eval_condition_with_ai(condition):
+    print("real function called")
     """
     Evaluates a condition using OpenAI's Chat API.    
     """
-    if isinstance(condition, bool):
-        response = client.chat.completions.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant that evaluates conditions."},
-                {"role": "user", "content": f"Evaluate this condition and respond with only 'True' or 'False': {condition}"}
-            ]
-        )
-        print(condition)
-        print(response.choices[0].message.content)
-        result = response.choices[0].message.content.strip().lower() == 'true'
-    else:
-        raise ValueError("Condition must be a boolean")
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant that evaluates conditions."},
+            {"role": "user", "content": f"Evaluate this condition and respond with only 'True' or 'False': {condition}"}
+        ]
+    )
+    print(condition)
+    print(response.choices[0].message.content)
+    result = response.choices[0].message.content.strip().lower() == 'true'
 
     return result
     

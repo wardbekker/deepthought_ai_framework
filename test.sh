@@ -1,3 +1,6 @@
 #!/bin/bash
 # Run the tests
-python -m unittest discover tests
+# echo to cli args
+echo "Running tests with args: $1"
+
+python -m unittest discover ./tests $1

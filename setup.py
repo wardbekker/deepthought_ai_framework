@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="ai_if_elif",
+    name="DeepThought Artificial Intelligence (AI) Engine powered by AI",
     version="0.1.0",
     packages=find_packages(exclude=["tests*"]),
     install_requires=[
@@ -12,7 +12,7 @@ setup(
     description="A Python library for AI-based conditional logic using OpenAI",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/wardbekker/ai_if_elif",
+    url="https://github.com/wardbekker/deepthought_ai_engine",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
