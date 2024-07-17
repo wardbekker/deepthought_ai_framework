@@ -12,7 +12,7 @@ setup(
     description="A Python library for AI-based conditional logic using OpenAI",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/wardbekker/deepthought_ai_engine",
+    url="https://github.com/wardbekker/deepthought_ai_framework",
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

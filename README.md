@@ -46,7 +46,7 @@ def sky_is_blue():
 
 def sky_is_not_blue():
     # TODO: implement logic to execute when the sky is not indeed blue
-    pass "not blue result"
+    return "not blue result"
 
 # AI-evaluated condition (uses 42 different language models for unprecedented accuracy and existential doubt)
 result = ai_if("Is the sky blue? (Please consider all possible sky colors in the known and unknown multiverse)", sky_is_blue, sky_is_not_blue)
