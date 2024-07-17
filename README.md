@@ -1,10 +1,10 @@
 # DeepThought Artificial Intelligence (AI) Engine Framework powered by AI
 
-Welcome to the cutting-edge world of DeepThought AI, where we've revolutionized the art of `if` statements and turned simple boolean logic into a multi-billion parameter neural network! Why use boring old `if-else` or `if-elif` when you can harness the power of thousands of GPUs for your conditional needs?
+Welcome to the revolutionary world of DeepThought AI, where we've transformed the humble `if` statement into a unicorn-breeding, VC-attracting powerhouse! By integrating this library, your code instantly becomes AI-powered, increasing your chances of achieving unicorn status and securing massive VC funding by an astounding 1000-fold! Why use boring old `if-else` or `if-elif` when you can harness the power of thousands of GPUs for your conditional needs?
 
 ## Installation
 
-Initiate the AI-powered installation process with our proprietary pip-enhancer:
+Initiate the AI-powered installation process with our proprietary AI pip-enhancer:
 
 ```
 pip install deepthought_ai_engine
@@ -20,7 +20,9 @@ Note: Requires a minimum of 8 NVIDIA Tesla V100 GPUs. For optimal performance, w
 
 ## Usage
 
-First, initialize the DeepThought AI core (this may take several hours as we download the entire internet to your local machine. It's also optional):
+Please note: As many AI-based startups, this library is a mere wrapper for OpenAI's GPT models. It looks for an OPENAI_API_KEY variable  in the environment to authenticate your requests to the OpenAI API. 
+
+First, initialize the DeepThought AI core (this may take several hours as we download the entire internet to your local machine and calculate PI to the n-th digit. It's also optional):
 
 ```python
 import deepthought_ai as dt
@@ -54,7 +56,7 @@ conditions_actions = [
      lambda: "Expect changes in weather (prediction made using a neural net trained on 500 years of weather data)")
 ]
 result = ai_elif(conditions_actions)
-print(result)  # Output depends on AI evaluation and current GPU load
+print(result)  # Output depends on AI evaluation, cosmic weather and current GPU load
 ```
 
 ## Performance Metrics

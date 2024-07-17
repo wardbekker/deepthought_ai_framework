@@ -2,7 +2,7 @@ import unittest
 from unittest.mock import patch
 import deepthought_ai
 
-@patch('deepthought_ai.eval_condition_with_ai')
+@patch('deepthought_ai.main.eval_condition_with_ai')
 class TestAiIfElif(unittest.TestCase):
 
     def test_ai_if_true_condition(self, mock_eval):

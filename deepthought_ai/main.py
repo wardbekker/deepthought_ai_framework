@@ -42,19 +42,18 @@ def ai_elif(conditions_actions):
 
 
 def eval_condition_with_ai(condition):
-    print("real function called")
     """
     Evaluates a condition using OpenAI's Chat API.    
     """
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
+    messages=[
             {"role": "system", "content": "You are a helpful assistant that evaluates conditions."},
             {"role": "user", "content": f"Evaluate this condition and respond with only 'True' or 'False': {condition}"}
         ]
+    
+    response = client.chat.completions.create(
+        model="gpt-3.5-turbo",
+        messages=messages
     )
-    print(condition)
-    print(response.choices[0].message.content)
     result = response.choices[0].message.content.strip().lower() == 'true'
 
     return result
